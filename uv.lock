@@ -902,7 +902,7 @@ wheels = [
 
 [[package]]
 name = "onedl-mmcv"
-version = "2.3.2"
+version = "2.3.2.post2"
 source = { editable = "." }
 dependencies = [
     { name = "addict" },
