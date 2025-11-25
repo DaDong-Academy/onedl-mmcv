@@ -20,7 +20,8 @@ COPY --from=ghcr.io/astral-sh/uv:0.8.14 /uv /uvx /bin/
 WORKDIR /workspace
 ARG PYTHON_VERSION="3.10"
 ARG PYTORCH="2.8.0"
-ENV UV_LINK_MODE=copy
+ENV UV_LINK_MODE=copy \
+    UV_COMPILE_BYTECODE=1
 RUN uv venv --python ${PYTHON_VERSION}
 ENV PATH="$PATH:/workspace/.venv/bin"
 
