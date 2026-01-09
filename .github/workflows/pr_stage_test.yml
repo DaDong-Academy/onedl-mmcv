@@ -115,7 +115,7 @@ jobs:
           path: code-coverage-results.md
 
   build_cu118:
-    runs-on: ubuntu-22.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     container:
       image: nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
     env:
